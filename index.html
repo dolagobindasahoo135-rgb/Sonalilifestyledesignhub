@@ -1,149 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sonali Lifestyle Design Hub</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
-}
-
-/* Header */
-header {
-    background: #ff4d6d;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-/* Navbar */
-nav {
-    background: #333;
-    padding: 10px;
-    text-align: center;
-}
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-/* Banner */
-.banner {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center;
-    background-size: cover;
-    height: 300px;
-}
-
-/* Products */
-.container {
-    padding: 20px;
-}
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-button {
-    background: green;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-/* Footer */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonali Lifestyle Design Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+  <!-- Header -->
+  <header>
     <h1>Sonali Lifestyle Design Hub 👗</h1>
     <p>Latest Collection for Women</p>
-</header>
+  </header>
 
-<nav>
+  <!-- Navbar -->
+  <nav>
     <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
-</nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<div class="banner"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Discover Your Style</h2>
+    <p>Trendy • Elegant • Affordable</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </section>
 
-<div class="container">
-    <h2>Our Dresses</h2>
+  <!-- Products -->
+  <section id="products" class="products">
+    <h2>Our Collection</h2>
 
-    <div class="products">
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/250" alt="">
+        <h3>Designer Kurti</h3>
+        <p>₹999</p>
+      </div>
 
-        <!-- Product 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/200">
-            <h3>Stylish Kurti</h3>
-            <p>₹499</p>
-            <a href="https://wa.me/9337254663">
-                <button>Order Now</button>
-            </a>
-        </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250" alt="">
+        <h3>Stylish Dress</h3>
+        <p>₹1499</p>
+      </div>
 
-        <!-- Product 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/200">
-            <h3>Party Wear Dress</h3>
-            <p>₹899</p>
-            <a href="https://wa.me/9337254663">
-                <button>Order Now</button>
-            </a>
-        </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250" alt="">
+        <h3>Party Wear Gown</h3>
+        <p>₹2999</p>
+      </div>
 
-        <!-- Product 3 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/200">
-            <h3>Cotton Kurti</h3>
-            <p>₹599</p>
-            <a href="https://wa.me/9337254663">
-                <button>Order Now</button>
-            </a>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/200">
-            <h3>Designer Gown</h3>
-            <p>₹1299</p>
-            <a href="https://wa.me/9337254663">
-                <button>Order Now</button>
-            </a>
-        </div>
-
+      <div class="card">
+        <img src="https://via.placeholder.com/250" alt="">
+        <h3>Casual Top</h3>
+        <p>₹699</p>
+      </div>
     </div>
-</div>
+  </section>
 
-<footer>
-    <p>© 2026 My Dress Store | Contact: +91 9337254663</p>
-</footer>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@sonalihub.com</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Sonali Lifestyle Design Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Links -->
+    <div class="footer-links">
+      <p>Contact Us</p>
+      <p>Terms of Service</p>
+      <p>Privacy Policy</p>
+      <p>Shipping Policy</p>
+      <p>Refund Policy</p>
+      <p>How to Order</p>
+      <p>How to Create an Account</p>
+      <p>Happy Customers</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h3>Customer Care Contact Details :</h3>
+      <p>📞 +91 9337254663</p>
+      <p>📞 +91 8847816521</p>
+      <p>📧 sonalilifestyledesignhub@gmail.com</p>
+      <a href="https://wa.me/919337254663" class="whatsapp-btn">Chat on WhatsApp</a>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="icons">
+        <span>📸</span>
+        <span>▶️</span>
+        <span>📘</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Payment -->
+  <div class="payment">
+    <h3>We Accept</h3>
+    <div class="payment-icons">
+      <span>GPay</span>
+      <span>PhonePe</span>
+      <span>Visa</span>
+      <span>Mastercard</span>
+      <span>PayPal</span>
+    </div>
+  </div>
+
+  <!-- App Download -->
+  <div class="app-download">
+    <h2>Download Our App</h2>
+    <button>Google Play</button>
+    <button>App Store</button>
+  </div>
+
+</footer>
