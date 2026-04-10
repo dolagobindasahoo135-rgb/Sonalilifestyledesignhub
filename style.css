@@ -168,3 +168,13 @@ footer {
     flex-direction: column;
   }
 }
+.icons img {
+  width: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.payment-icons img {
+  width: 50px;
+  margin-right: 10px;
+}
